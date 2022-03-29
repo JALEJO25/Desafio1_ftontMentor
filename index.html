@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <main class="main-container">
+      <section class="ficha1-container">
+        <article class="icon__texto">
+          <img
+            src="images/icon-star.svg"
+            alt="icono estrella"
+            class="ico__estrella"
+          />
+          <h1 class="titulo">How did we do?</h1>
+          <p class="parrafo">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+          <div class="lista-botones" id="btn-numeros">
+            <button class="lista-boton">1</button>
+            <button class="lista-boton">2</button>
+            <button class="lista-boton">3</button>
+            <button class="lista-boton">4</button>
+            <button class="lista-boton">5</button>
+          </div>
+        </article>
+        <input type="button" value="Submit" class="boton"/>
+      </section>
+
+      <!-- SECCION DE LA FICHA 2 -->
+      <section class="ficha2-container hidden">
+        <img
+          src="./images/illustration-thank-you.svg"
+          alt=""
+          class="img-ficha2"
+        />
+        <article class="ficha2-contenido">
+          <p class="parrafo-contador">
+            You selected <span id="numb-seleccionado"></span> out of 5
+          </p>
+          <h1 class="titulo">Thank you!</h1>
+          <p class="parrafo2">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </article>
+      </section>
+    </main>
+  <script src="./js/dinamica.js"></script>
+
+  </body>
+</html>
